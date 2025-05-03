@@ -117,7 +117,7 @@ const CustomNode: React.FC<NodeProps<ApiNodeData>> = ({ data }) => {
             borderRadius: '4px',
             fontSize: '10px',
             maxWidth: '200px',
-            zIndex: 0, // Düğümün arkasında kalabilir veya 1 yapılır
+            zIndex: 10, // Düğümün üzerinde görünmesi için zIndex artırıldı
             whiteSpace: 'normal',
             boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
             pointerEvents: 'none', // Tıklama olaylarını engelle

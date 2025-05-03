@@ -3,9 +3,9 @@
 Visual Mind is a tool that helps you create interactive mind maps from a topic you enter, using artificial intelligence.
 
 <p align="center">
-  <img src="_images/example1.png?raw=true" alt="Visual Mind Example 1" width="30%"/>
-  <img src="_images/example2.png?raw=true" alt="Visual Mind Example 2" width="30%"/>
-  <img src="_images/example0.png?raw=true" alt="Visual Mind Example 0" width="30%"/>
+  <img src="_images/example-0.png?raw=true" alt="Visual Mind Example 0" width="30%"/>
+  <img src="_images/example-1.png?raw=true" alt="Visual Mind Example 1" width="30%"/>
+  <img src="_images/example-2.png?raw=true" alt="Visual Mind Example 2" width="30%"/>
 </p>
 
 ## ✨ Features
