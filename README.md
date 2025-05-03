@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Visual Mind
 
-## Getting Started
+Visual Mind is a tool that helps you create interactive mind maps from a topic you enter, using artificial intelligence.
 
-First, run the development server:
+<p align="center">
+  <img src="_images/example1.png?raw=true" alt="Visual Mind Example 1" width="30%"/>
+  <img src="_images/example2.png?raw=true" alt="Visual Mind Example 2" width="30%"/>
+  <img src="_images/example0.png?raw=true" alt="Visual Mind Example 0" width="30%"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **AI-Powered:** Automatically generates a mind map for the specified topic.
+- **Interactive Interface:** Allows dragging nodes and zooming/panning the generated mind map (using `reactflow`).
+- **Dark Mode:** Features a sleek, eye-friendly dark theme interface.
+- **Custom Nodes:** Nodes display the topic title and AI-generated descriptions (if available). Descriptions appear next to the nodes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend:**
+  - [Next.js](https://nextjs.org/) (React Framework)
+  - [React](https://reactjs.org/)
+  - [React Flow](https://reactflow.dev/) (For mind map visualization)
+  - [TypeScript](https://www.typescriptlang.org/)
+- **Backend (API):**
+  - Next.js API Routes
+  - [@google/genai](https://github.com/google/generative-ai-js) (For communicating with the Google Gemini API)
+- **Styling:**
+  - Inline Styles & Global CSS (JSX)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to run the project locally on your machine:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clone the Repository:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/hasirciogli/visualmind.git
+    cd visualmind
+    ```
 
-## Deploy on Vercel
+2.  **Install Dependencies:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm install
+    # or
+    # yarn install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Environment Variables:**
+    Create a file named `.env.local` in the project's root directory. You'll need to add your Google Gemini API key to this file (required for the backend API to work):
+
+    ```env
+    GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
+    ```
+
+    You can obtain an API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+4.  **Start the Development Server:**
+
+    ```bash
+    npm run dev
+    # or
+    # yarn dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📖 Usage
+
+1.  When you open the application, enter the topic you want to create a mind map for in the input field (e.g., "Artificial Intelligence", "Quantum Physics").
+2.  Click the "Generate" button.
+3.  The AI will generate a mind map related to your topic and display it on the screen.
+4.  You can drag the nodes on the map and zoom in/out using the mouse wheel. Additional information boxes will appear next to nodes that include descriptions.
+
+## 🤝 Contributing
+
+Contributions help make the project better. To report a bug or suggest a new feature, please open an "Issue" or submit a "Pull Request".
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file in the project's GitHub repository for details.
